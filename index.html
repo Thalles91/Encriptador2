@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modo_escuro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="cabecalho">
+            <a href="https://www.alura.com.br/" target="_blank"><img src="./imagens/logoNomeAlura.png" alt="logo da Alura"/></a>
+            <h1 class="titulo">Encriptador de Texto</h1>
+            <a href="//www.oracle.com/br/education/oracle-next-education/" target="_blank"><img src="/imagens/oracle (1).png" alt="logo da Oracle" /></a>
+        </div>
+        
+        <div class="primeiro_container">
+            <div class="textoEbotoes">
+                <div class="areaDoTexto1">
+                    <textarea class="entrada_texto" placeholder="Insira seu texto aqui!" id="entrada_texto"  type="text"></textarea>
+                </div>
+                <p class="informacao">
+                    Não é permitido letras maiusculas nem simbulos (@%#$)
+                </p>
+            
+                <div class="botoes">
+                    <button class="botao" id="encriptar" type="submit" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="botao" id="desencriptar"  type="submit" onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="botao" id="copiar" type="button" onclick="btnCopiar()">Copiar</button>
+                </div>
+        
+
+        <div class="segundo_container">
+            <textarea class="saida_Texto" placeholder="Nenhuma mensagem aqui!" id="saida_Texto"  type="text"></textarea>
+        </div>
+    <footer>
+        <div class="container_footer">
+            <p class="final_footer">
+                Densencolvido por <a class="footer_link" href="https://github.com/Thalles91" target="_blank"> Thalles Gonçalves </a> 
+            </p>
+        </div>
+    </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

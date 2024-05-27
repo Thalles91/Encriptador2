@@ -1,0 +1,255 @@
+:root {
+    --color1:#cde9ca ;
+    --color2:#ced89d ;
+    --color3:#dfba74 ;
+    --color4:#e8a249 ;
+    --color5:#575e55 ;
+}
+
+
+body{
+    background-color: var(--color5);
+    font-family: "Edu TAS Beginner", cursive;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    color: #575e55;
+    font-size:xx-large;
+}
+
+.container {
+    margin: 6px 0;
+    padding: 10px 2px;
+    background-color: var(--color4);
+    box-shadow: 0px 0px 8px 5px rgba(28, 18, 54, 0.33);
+    min-height: 100px;
+    width: 80%;
+    border-radius: 20px;
+    border: 12px;
+}
+
+.primeiro_container {
+    height: 80%;
+}
+
+.areaDoTexto1 {
+    background-color: var(--color1);
+    border: none;
+    outline: none;
+    resize: none;
+    display: flex;
+    border-radius: 22px;
+    border: 12px;
+    overflow: hidden;
+    width: 80%;
+    margin: 50px auto;
+    box-shadow: 0 0 25px -8px rgba(0, 0, 0, 0.800);
+}
+
+.entrada_texto {
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    height: 200px;
+    width: 90%;
+    background: none;
+    font-size: 30px;
+    font-family: "Edu TAS Beginner", cursive;
+    font-weight: 600;
+    line-height: 90%;
+    color: var(--color5);
+}
+
+
+.informacao {
+    margin: 7px;
+    text-align: center;
+    color: var(--color5);
+    font-size: 36px;
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.botao{
+    align-items:start;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+#encriptar {
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 100% auto;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color1);
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    background-color: #575e55;
+}
+#encriptar:hover {
+    background-position: right center;
+    background-color: var(--color1);
+    color: var(--color5);
+    text-decoration: none;
+}
+
+#desencriptar {
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 100% auto;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color1);
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    background-color: #575e55;
+}
+
+#desencriptar:hover {
+    background-position: right center;
+    background-color: var(--color1);
+    color: var(--color5);
+    text-decoration: none;
+}
+
+#copiar {
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 100% auto;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color1);
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    background-color: #575e55;
+}
+
+#copiar:hover {
+    background-position: right center;
+    background-color: var(--color1);
+    color: var(--color5);
+    text-decoration: none;
+}
+
+
+.segundo_container{
+    box-sizing: border-box;
+    background-color: var(--color1);
+    border-radius: 22px;
+    border: 12px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    justify-content: center;
+    width: 70%;
+    margin: 50px auto;
+    box-shadow: 0 0 25px -8px rgba(0, 0, 0, 0.800);
+}
+
+.saida_Texto {
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    height: 200px;
+    width: 90%;
+    background: none;
+    font-size: 30px;
+    font-family: "Edu TAS Beginner", cursive;
+    font-weight: 600;
+    line-height: 90%;
+    color: var(--color5);
+    background-image: url(/imagens/bau_aberto.png);
+    background-repeat: no-repeat;    
+    
+}
+
+
+footer {
+    text-align: center;
+    font-size: 24px;
+}
+
+.footer_link{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.footer_link:hover{
+    text-decoration: none;
+    color: var(--color5);
+}
+
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 915px) {
+    body {
+        background-color: var(--color5);
+        display:flex;
+        flex-direction: column;
+    }
+    .cabecalho {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .saida_Texto {
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    height: 200px;
+    width: 90%;
+    background: none;
+    font-size: 30px;
+    font-family: "Edu TAS Beginner", cursive;
+    font-weight: 600;
+    line-height: 90%;
+    color: var(--color5);
+    background-image: url(/imagens/bau_aberto.png);
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: bottom;
+    }
+}
